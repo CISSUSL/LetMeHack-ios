@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FAQQuestionCell" rowHeight="183" id="KGk-i7-Jjw" customClass="FAQQuestionCell" customModule="Registration_LetMeHack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyH-ws-zTA">
+                        <rect key="frame" x="0.0" y="0.0" width="448" height="177.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEI-vw-6Jq">
+                                <rect key="frame" x="15" y="5" width="418" height="167.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.3127140410958904" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BEI-vw-6Jq" firstAttribute="top" secondItem="qyH-ws-zTA" secondAttribute="top" constant="5" id="get-8E-WRQ"/>
+                            <constraint firstItem="BEI-vw-6Jq" firstAttribute="leading" secondItem="qyH-ws-zTA" secondAttribute="leading" constant="15" id="nxW-ZH-4UK"/>
+                            <constraint firstAttribute="bottom" secondItem="BEI-vw-6Jq" secondAttribute="bottom" constant="5" id="puG-SE-FFd"/>
+                            <constraint firstAttribute="trailing" secondItem="BEI-vw-6Jq" secondAttribute="trailing" constant="15" id="tsW-CM-jIR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qyH-ws-zTA" secondAttribute="trailing" id="6bz-M5-xAD"/>
+                    <constraint firstAttribute="bottom" secondItem="qyH-ws-zTA" secondAttribute="bottom" constant="5" id="CWI-Yj-2gt"/>
+                    <constraint firstItem="qyH-ws-zTA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D5X-l6-qF5"/>
+                    <constraint firstItem="qyH-ws-zTA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P9d-Ij-iWQ"/>
+                    <constraint firstItem="qyH-ws-zTA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TxQ-Ws-6Wp"/>
+                    <constraint firstItem="qyH-ws-zTA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qOH-7r-g4W"/>
+                    <constraint firstAttribute="trailing" secondItem="qyH-ws-zTA" secondAttribute="trailing" id="t4J-dV-JHI"/>
+                    <constraint firstAttribute="bottom" secondItem="qyH-ws-zTA" secondAttribute="bottom" constant="5" id="vid-rZ-27e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="conView" destination="qyH-ws-zTA" id="Ixo-Y6-76C"/>
+                <outlet property="questionTextView" destination="BEI-vw-6Jq" id="ifr-qq-ANw"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="153.5"/>
+        </tableViewCell>
+    </objects>
+</document>
